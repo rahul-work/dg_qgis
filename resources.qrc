@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/dg_qgis" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
