@@ -118,3 +118,8 @@ def shortest_path(origin, destination, osm_layer, func):
 			'filepath': str(filepath)
 		}]
 	}
+
+
+def load_osm_within_bbox(north, south, east, west, func):
+	graph = osmnx.graph_from_bbox(north, south, east, west)
+	

@@ -1,8 +1,8 @@
 import sys
 import argparse
 
-from .. import osm
-from .. import pt
+from .dg import osm
+from .dg import pt
 
 
 class ArgumentParserWithErrorCatching(argparse.ArgumentParser):

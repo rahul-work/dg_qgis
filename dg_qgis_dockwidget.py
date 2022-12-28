@@ -29,8 +29,8 @@ from qgis.PyQt.QtCore import pyqtSignal
 
 from qgis.PyQt.QtWidgets import QMessageBox
 
-from .dg.cmd import handle
-from .dg.qgis import stub
+from .qgis_dg_cmdln import handle
+from .qgis_dg_cmdln import stub
 
 
 FORM_CLASS, _ = uic.loadUiType(os.path.join(

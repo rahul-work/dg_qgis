@@ -2,6 +2,8 @@ from pathlib import Path
 
 from qgis.core import QgsProject, QgsVectorLayer
 
+from .dg_cmdln import handle # currently not used; transparently made available from here (qgis_dg_cmdln)
+
 
 def stub(iface, data):
 	# iface.addVectorLayer(data, 'layer', 'ogr')

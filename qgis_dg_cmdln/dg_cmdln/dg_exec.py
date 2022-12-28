@@ -10,3 +10,9 @@ def handle(cmd):
 		# return repr(e)
 	# return str(args)
 	return args.func(**vars(args))
+
+
+if __name__ == '__main__':
+	args = create_parser().parse_args()
+	print(args)
+	print( args.func(**vars(args)) )
