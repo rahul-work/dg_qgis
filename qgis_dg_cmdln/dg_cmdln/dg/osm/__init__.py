@@ -44,6 +44,11 @@ def load_osm_within_taluka(district, taluka, name, no_simplify, func):
 	except networkx.exception.NetworkXPointlessConcept:
 		return {'type': 'message', 'message': "No location/route in the given region!"}
 	
+	return {
+		'graph': graph,
+		'taluka_polygon': polygon_gdf
+	}
+	
 	# response = get_response_for_osm_load(workspace, graph, name)
 	# filepath = dirpath / f'{name}.gpkg'
 	osmnx.save_graphml(graph, Path(r'D:\iitbgis\work\Transport\data\workspace') / f"{name}.graphml")

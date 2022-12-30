@@ -1,1 +1,1 @@
-from .dg_exec import handle
+from .__main__ import handle
