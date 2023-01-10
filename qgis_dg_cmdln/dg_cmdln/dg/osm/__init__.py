@@ -7,6 +7,9 @@ import networkx
 import pandas as pd
 import geopandas as gpd
 
+# purely for 'export'
+from . import utils
+
 
 def load_osm_around_point(lat, lon, bbox_dist_mts, name, no_simplify, func):
 	try:
